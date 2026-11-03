@@ -6,7 +6,7 @@
 /*   By: abouhou <abouhou@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 21:18:37 by abouhou           #+#    #+#             */
-/*   Updated: 2026/11/03 14:41:40 by abouhou          ###   ########.fr       */
+/*   Updated: 2026/11/03 14:50:09 by abouhou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int				i;
-	int				sign;
-	long			res;
+	int							i;
+	int							sign;
+	unsigned long long			res;
 
 	i = 0;
 	res = 0;
