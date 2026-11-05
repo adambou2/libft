@@ -6,7 +6,7 @@
 /*   By: abouhou <abouhou@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/25 15:59:14 by abouhou           #+#    #+#             */
-/*   Updated: 2026/10/30 21:31:58 by abouhou          ###   ########.fr       */
+/*   Updated: 2026/11/04 21:52:09 by abouhou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*str;
 	size_t	total;
 
-	if (s1 == NULL || s2 == NULL)
+	if (!s1)
+		return (ft_strdup(s2));
+	if (!s2)
+		return (ft_strdup(s1));
+	if (!s1 && !s2)
 		return (NULL);
 	total = ft_strlen(s1) + ft_strlen(s2) + 1;
 	str = ft_calloc(total, sizeof (char));

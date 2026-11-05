@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: abouhou <abouhou@student.1337.ma>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/10/13 10:03:30 by abouhou           #+#    #+#              #
-#    Updated: 2026/10/31 22:36:22 by abouhou          ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME = 	libft.a
 SRCS = 	ft_atoi.c \
 	ft_isalpha.c \
@@ -80,8 +68,8 @@ fclean: clean
 	rm -f $(NAME)
 
 
-re: fclean
+re: fclean 
 	$(MAKE) all
 
 
-.PHONY: all main clean fclean re
+.PHONY: all clean fclean re

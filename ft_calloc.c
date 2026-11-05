@@ -6,7 +6,7 @@
 /*   By: abouhou <abouhou@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 20:53:42 by abouhou           #+#    #+#             */
-/*   Updated: 2026/11/02 15:17:25 by abouhou          ###   ########.fr       */
+/*   Updated: 2026/11/02 15:21:04 by abouhou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
 	size_t	total;
+
 	if (size == 0 || nmemb == 0)
 		return (malloc(1));
 	if (nmemb > SIZE_MAX / size)

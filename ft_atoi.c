@@ -6,12 +6,11 @@
 /*   By: abouhou <abouhou@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 21:18:37 by abouhou           #+#    #+#             */
-/*   Updated: 2026/11/03 14:50:09 by abouhou          ###   ########.fr       */
+/*   Updated: 2026/11/05 09:07:14 by abouhou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_atoi(const char *nptr)
 {

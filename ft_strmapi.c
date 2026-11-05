@@ -6,7 +6,7 @@
 /*   By: abouhou <abouhou@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 21:18:00 by abouhou           #+#    #+#             */
-/*   Updated: 2026/11/01 01:43:55 by abouhou          ###   ########.fr       */
+/*   Updated: 2026/11/02 15:17:41 by abouhou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,17 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	str[i] = '\0';
 	return (str);
+}
+
+char ft_f(unsigned int i, char c)
+{
+	(void)i;
+	return (c + 1);
+}
+
+#include <stdio.h>
+
+int	main(void)
+{
+	printf("%s\n", ft_strmapi("hello", ft_f));
 }

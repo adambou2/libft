@@ -6,7 +6,7 @@
 /*   By: abouhou <abouhou@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 20:54:03 by abouhou           #+#    #+#             */
-/*   Updated: 2026/10/30 21:35:17 by abouhou          ###   ########.fr       */
+/*   Updated: 2026/11/05 09:10:05 by abouhou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static int	word_len(char const *str, char c)
 	return (i);
 }
 
-static void	word_free(char **str, int count)
+static void	cleanup(char **str, int count)
 {
 	int	i;
 
@@ -74,7 +74,7 @@ static char	**word_set(char const *s, char **word, char c)
 			word[j] = ft_substr(s, i, len);
 			if (!word[j])
 			{
-				word_free(word, j);
+				cleanup(word, j);
 				return (NULL);
 			}
 			j++;
