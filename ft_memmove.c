@@ -6,7 +6,7 @@
 /*   By: abouhou <abouhou@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 16:25:47 by abouhou           #+#    #+#             */
-/*   Updated: 2026/11/02 15:17:55 by abouhou          ###   ########.fr       */
+/*   Updated: 2026/11/06 14:59:17 by abouhou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	char		*dptr;
 	const char	*sptr;
 
-	dptr = dest;
-	sptr = src;
+	dptr = (char *)dest;
+	sptr = (const char *)src;
 	if (dest == src || n == 0)
 		return (dest);
 	if (dptr < sptr)
