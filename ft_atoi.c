@@ -6,7 +6,7 @@
 /*   By: abouhou <abouhou@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 21:18:37 by abouhou           #+#    #+#             */
-/*   Updated: 2026/11/05 09:07:14 by abouhou          ###   ########.fr       */
+/*   Updated: 2026/11/06 14:17:37 by abouhou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ int	ft_atoi(const char *nptr)
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
 		res = (res * 10) + (nptr[i] - '0');
-		if (sign == 1 && res > 9223372036854775808ULL)
+		if (sign == 1 && res > 9223372036854775807)
 			return (-1);
-		if (sign == -1 && res > 9223372036854775808ULL)
+		if (sign == -1 && res > 9223372036854775807)
 			return (0);
 		i++;
 	}

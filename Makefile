@@ -68,8 +68,7 @@ fclean: clean
 	rm -f $(NAME)
 
 
-re: fclean 
-	$(MAKE) all
+re: fclean all
 
 
-.PHONY: all clean fclean re
+.PHONY: clean

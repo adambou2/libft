@@ -33,16 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-
-char ft_f(unsigned int i, char c)
-{
-	(void)i;
-	return (c + 1);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	printf("%s\n", ft_strmapi("hello", ft_f));
-}
