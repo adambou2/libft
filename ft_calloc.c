@@ -6,7 +6,7 @@
 /*   By: abouhou <abouhou@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 20:53:42 by abouhou           #+#    #+#             */
-/*   Updated: 2026/11/02 15:21:04 by abouhou          ###   ########.fr       */
+/*   Updated: 2026/11/06 20:44:12 by abouhou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,18 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		return (NULL);
 	ft_memset(ptr, 0, total);
 	return (ptr);
+}
+#include <stdio.h>
+int	main(void)
+{
+	int	*x;
+	x = ft_calloc(5, sizeof(int));
+	if (!x)
+		return (0);
+	int i = 0;
+	while (i < 5)
+	{
+		printf("%d", x[i++]);
+	}
+	return(0);
 }

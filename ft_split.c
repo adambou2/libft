@@ -6,7 +6,7 @@
 /*   By: abouhou <abouhou@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 20:54:03 by abouhou           #+#    #+#             */
-/*   Updated: 2026/11/05 09:10:05 by abouhou          ###   ########.fr       */
+/*   Updated: 2026/11/06 20:55:02 by abouhou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,4 +97,20 @@ char	**ft_split(char const *s, char c)
 	if (!word_set(s, word, c))
 		return (NULL);
 	return (word);
+}
+#include <stdio.h>
+int		main(void)
+{
+	char	**str;
+
+	str = ft_split("hello wrold fucking 1337", ' ');
+	if (!str)
+		return (0);
+	int i = 0;
+	while (i < 4)
+	{
+		printf("%s\n", str[i]);
+		i++;
+	}
+	return (0);
 }

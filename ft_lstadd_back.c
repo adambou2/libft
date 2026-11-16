@@ -6,7 +6,7 @@
 /*   By: abouhou <abouhou@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 14:41:26 by abouhou           #+#    #+#             */
-/*   Updated: 2026/10/31 15:25:39 by abouhou          ###   ########.fr       */
+/*   Updated: 2026/11/06 21:23:13 by abouhou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,4 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	last = ft_lstlast(*lst);
 	last->next = new;
 }
+

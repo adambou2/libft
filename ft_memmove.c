@@ -6,7 +6,7 @@
 /*   By: abouhou <abouhou@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 16:25:47 by abouhou           #+#    #+#             */
-/*   Updated: 2026/11/06 14:59:17 by abouhou          ###   ########.fr       */
+/*   Updated: 2026/11/06 19:54:27 by abouhou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,4 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
