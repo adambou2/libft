@@ -98,19 +98,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (word);
 }
-#include <stdio.h>
-int		main(void)
-{
-	char	**str;
-
-	str = ft_split("hello wrold fucking 1337", ' ');
-	if (!str)
-		return (0);
-	int i = 0;
-	while (i < 4)
-	{
-		printf("%s\n", str[i]);
-		i++;
-	}
-	return (0);
-}
